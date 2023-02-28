@@ -4,11 +4,13 @@ const width = Dimensions.get('window').width;
 
 const pageStyles = StyleSheet.create({
     headerText: {
-        fontSize: 25
+        fontSize: 25,
+        color: colors.b
     },
     breadTitle: {
       fontSize: 15,
-      fontWeight: "800"
+      fontWeight: "800",
+      color: colors.b
   },
     headerTextW: {
         fontSize: 30,
@@ -17,7 +19,8 @@ const pageStyles = StyleSheet.create({
     textBold: {
       fontWeight: "800",
       fontSize: 25,
-      marginLeft: 12
+      marginLeft: 12,
+      color: colors.b
     },
     textBoldW: {
         fontWeight: "800",
@@ -76,6 +79,23 @@ const pageStyles = StyleSheet.create({
       display: "flex", 
       flexDirection: "column",
       justifyContent: "flex-end"
+    },
+    categoriesImage: {
+      width: "100%", 
+      height: "100%", 
+      position: "absolute"
+    },
+    categoriesTitle: {
+      marginVertical: 10, 
+      color: colors.b,
+       fontWeight: "700", 
+       fontSize: 20
+    },
+    categoriesContainer: {
+      padding: 10, 
+      margin: 5, 
+      width: 158, 
+      height: 152
     }
   });
 

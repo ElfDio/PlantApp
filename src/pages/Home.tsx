@@ -53,9 +53,9 @@ function Home() {
           data={categories}
           numColumns={2}
           renderItem={({ item }) => (
-            <View style={{padding: 10, margin: 5, width: 158, height: 152}}>
-              <Text style={{marginVertical: 10, color: colors.b, fontWeight: "700", fontSize: 20}}>{item.title}</Text>
-              <Image source={{uri: item.image.url}} resizeMode="contain" style={{width: "100%", height: "100%", position: "absolute"}}/>
+            <View style={pageStyles.categoriesContainer}>
+              <Text style={pageStyles.categoriesTitle}>{item.title}</Text>
+              <Image source={{uri: item.image.url}} resizeMode="contain" style={pageStyles.categoriesImage}/>
             </View>
           )}
         />

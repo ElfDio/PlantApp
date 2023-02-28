@@ -2,6 +2,7 @@ import React, { createContext, useMemo, useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ParamsList } from './ParamsList';
 import { Diagnose, Garden, Home, Profile, Qr } from '../pages';
+import { colors } from '../config/color';
 
 const Tab = createBottomTabNavigator<ParamsList>();
 
@@ -10,8 +11,8 @@ function Drawer() {
   return (
       <Tab.Navigator  screenOptions={({ route }) => ({
         tabBarIconStyle: { display: "none"},
-        tabBarActiveTintColor: "red",
-        tabBarInactiveTintColor: "black",
+        tabBarActiveTintColor: colors.main,
+        tabBarInactiveTintColor: colors.b,
         tabBarLabelPosition: 'beside-icon',
         headerShown: false
       })}>
